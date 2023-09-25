@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149649a1-b9ff-42ae-bef3-007e1acec690" name="Changes" comment="Added classe dominio y estudiante">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SystemStudents/datos/EstudianteDAO.java" afterDir="false" />
+    <list default="true" id="149649a1-b9ff-42ae-bef3-007e1acec690" name="Changes" comment="Added metodo estudiante">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SystemStudents/datos/EstudianteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SystemStudents/datos/EstudianteDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +63,22 @@
       <option name="project" value="LOCAL" />
       <updated>1695579704294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added metodo estudiante">
+      <option name="closed" value="true" />
+      <created>1695580936241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695580936241</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added conector to mysql db" />
     <MESSAGE value="Added classe dominio y estudiante" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classe dominio y estudiante" />
+    <MESSAGE value="Added metodo estudiante" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added metodo estudiante" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
