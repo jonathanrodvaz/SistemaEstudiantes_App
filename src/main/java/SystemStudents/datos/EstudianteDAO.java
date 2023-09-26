@@ -97,31 +97,70 @@ public class EstudianteDAO {
         }
         return false;
     }
+    public boolean modificarEstudiante(Estudiante estudiante){
+    PreparedStatement ps;
+    Connection con = getConexion();
+    String sql = "UPDATE estudiante SET nombre=?, apelllido=?, telefono=?, email=? WHERE id_estudiante = ?";
+    try {
+        ps = con.prepareStatement(sql);
+        ps.setString(1, estudiante.getNombre());
+        ps.setString(2, estudiante.getApelllido());
+        ps.setString(3, estudiante.getTelefono());
+        ps.setString(4, estudiante.getEmail());
+        ps.setInt(5, estudiante.getIdEstudiante());
+        ps.execute();
+        return true;
+    } catch(Exception e){
+        System.out.println("Error al modificar estudiante: " + e.getMessage());
+    }
+    finally {
+        try{
+            con.close();
+        } catch(Exception e){
+            System.out.println("Error al cerrar conexion: " + e.getMessage());
+        }
+    }
+    return false;
+    }
+
 
     public static void main(String[] args) {
         var estudianteDao = new EstudianteDAO();
 
-       // Agregar estudiante
-        //var nuevoEstudiante = new Estudiante("Carlos", "Lara", "555777000", "carlos@aol.com");
+        // Agregar estudiante:
+        // var nuevoEstudiante = new Estudiante("Carlos", "Lara", "555777000", "carlos@aol.com");
         //var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
         //if(agregado)
-          //  System.out.println("Estudiante agregado: " + nuevoEstudiante);
+        //  System.out.println("Estudiante agregado: " + nuevoEstudiante);
         //else
-          //  System.out.println("No se agrego el estudiante: " + nuevoEstudiante);
+        //  System.out.println("No se agrego el estudiante: " + nuevoEstudiante);
+
+
+
+        //Modificar estudiante:
+        var estudianteModificar = new Estudiante(3, "Karla", "Gomez", "555888999", "karla@aol.com");
+        var modificado = estudianteDao.modificarEstudiante(estudianteModificar);
+        if(modificado)
+            System.out.println("Estudiante modificado: " + estudianteModificar);
+        else
+            System.out.println("Estudiante no se modifico: " + estudianteModificar);
+
 
         // Listar los estudiantes
            System.out.println("Listado de Estudiantes: ");
-            List<Estudiante> estudiantes = estudianteDao.listar();
-            estudiantes.forEach(System.out::println);
+           List<Estudiante> estudiantes = estudianteDao.listar();
+           estudiantes.forEach(System.out::println);
+
+
 
         //Buscar por Id
         //var estudiante1 = new Estudiante(3);
         //System.out.println("Estudiante antes de la busqueda: " + estudiante1);
         //var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
         //if(encontrado)
-          //  System.out.println("Estudiante encontrado: " + estudiante1);
+        //  System.out.println("Estudiante encontrado: " + estudiante1);
         //else
-          //  System.out.println("No se encontro estudiante: " + estudiante1.getIdEstudiante());
+        //  System.out.println("No se encontro estudiante: " + estudiante1.getIdEstudiante());
 
     }
 }

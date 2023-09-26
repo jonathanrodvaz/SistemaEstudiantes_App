@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149649a1-b9ff-42ae-bef3-007e1acec690" name="Changes" comment="Added metodo buscarEstudiante por id">
+    <list default="true" id="149649a1-b9ff-42ae-bef3-007e1acec690" name="Changes" comment="Added metodo agregarEstudiante a db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SystemStudents/datos/EstudianteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SystemStudents/datos/EstudianteDAO.java" afterDir="false" />
     </list>
@@ -79,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695662102567</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added metodo agregarEstudiante a db">
+      <option name="closed" value="true" />
+      <created>1695663080321</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695663080321</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -87,7 +95,8 @@
     <MESSAGE value="Added classe dominio y estudiante" />
     <MESSAGE value="Added metodo estudiante" />
     <MESSAGE value="Added metodo buscarEstudiante por id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added metodo buscarEstudiante por id" />
+    <MESSAGE value="Added metodo agregarEstudiante a db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added metodo agregarEstudiante a db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
