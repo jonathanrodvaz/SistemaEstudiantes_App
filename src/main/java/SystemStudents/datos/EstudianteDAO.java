@@ -11,7 +11,7 @@ import static SystemStudents.conexion.Conexion.getConexion;
 
 //DAO - Data Access Object
 public class EstudianteDAO {
-    public List<Estudiante> listar(){
+    public List<Estudiante> listarEstudiantes(){
         List<Estudiante> estudiantes = new ArrayList<>();
         PreparedStatement ps;
         ResultSet rs;
@@ -170,7 +170,7 @@ public class EstudianteDAO {
 
         // Listar los estudiantes
            System.out.println("Listado de Estudiantes: ");
-           List<Estudiante> estudiantes = estudianteDao.listar();
+           List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
            estudiantes.forEach(System.out::println);
 
 
